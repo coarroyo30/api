@@ -1,0 +1,27 @@
+// Colour variables
+$color-primary       : #1ed760;
+$color-primary-dark  : darken($color-primary, 10%);
+
+$color-secondary     : #666666;
+
+$color-white         : #ffffff;
+$color-black         : #000000;
+
+$color-grey          : #666666;
+$color-grey-medium   : #cdcdcd;
+$color-grey-light    : #f4f4f4;
+
+// Font stack
+$font-primary        : 'Roboto', sans-serif;
+
+// UI Settings
+$max-width           : 1000px;
+$border-radius       : 4px;
+
+// Breaking points
+$mobile-s   : 320px;
+$mobile-m   : 375px;
+$mobile-l   : 425px;
+$tablet     : 768px;
+$laptop     : 1024px;
+$desktop    : 1280px;

@@ -1,0 +1,98 @@
+.search-zone {
+  padding: 2rem;
+
+  h1 {
+    color: $color-grey;
+    font-weight: 100;
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+  } // h1
+
+  form {
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+    min-width: 250px;
+
+    input {
+      flex: 0 100%;
+      height: 3rem;
+      margin-top: 1rem;
+      padding: .7rem;
+      border: none;
+      border-top: 2px solid $color-grey-medium;
+
+      border-radius: $border-radius;
+      font-size: 1rem;
+      font-weight: 300;
+      color: $color-grey;
+      outline: 0;
+      transition: border background .3s;
+      background: url("../img/icon-search-box.svg") 97% center no-repeat;
+      background-size: 36px;
+      background-color: $color-grey-light;
+      &:focus {
+        box-shadow: inset 0px 0px 10px 0px rgba($color-black, .1);
+      }
+    } // input
+
+    button {
+      flex: 0 100%;
+      height :3rem;
+      margin-top: 1rem;
+      padding: .7rem;
+      border-radius: $border-radius;
+      border: none;
+      border-bottom: 2px solid $color-grey-medium;
+      background-color: $color-primary-dark;
+      font-size: 1rem;
+      font-weight: 100;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgba($color-white, 1);
+      transition: background .3s;
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+      &:disabled {
+        background-color: $color-grey-medium;
+      }
+    } // button
+
+    input::-webkit-input-placeholder {
+      color: rgba($color-grey, .5);
+    }
+
+    input::-moz-placeholder {
+      color: rgba($color-grey, .5);
+    }
+
+    input:-ms-input-placeholder {
+      color: rgba($color-grey, .5);
+    }
+
+    input:-moz-placeholder {
+      color: rgba($color-grey, .5);
+    }
+
+  } // form
+
+  @media (min-width: $mobile-l) {
+    form {
+      input {
+        flex: 2 65%;
+      }
+      button {
+        flex: 1 30%;
+        margin-left: 1rem;
+      }
+    }
+  } // media phone-l
+
+  @media (min-width: $tablet) {
+      padding: 7rem 2rem 3rem;
+  }
+
+} // .search-zone

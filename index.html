@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Using a public API to create a gallery</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <header class="search-zone">
+      <h1>Search music albums on Spotify</h1>
+      <form action="#" id="search-form">
+        <input type="search" id="search-box" placeholder="Search by album or artist">
+        <button type="submit" id="search-btn">Search</button>
+      </form>
+    </header>
+    <div class="sort">
+      Sort by
+      <a class="sort-popularity" href="#">Popularity</a>
+      <a class="sort-date active" href="#">Date</a>
+      <a class="sort-name" href="#">Name</a>
+    </div>
+    <main class="gallery">
+    </main>
+    <div class="lightbox">
+      <a href="#" class="prev"></a>
+      <div class="info">
+        <div class="album-info">
+          <img class="album-info-image" src="#" alt="">
+          <span class="album-info-artist"></span>
+          <span class="album-info-name"></span>
+          <ul>
+            <li class="album-info-released"></li>
+            <li class="album-info-tracks"></li>
+          </ul>
+        </div>
+        <div class="track-info">
+        </div>
+      </div>
+      <a href="#" class="next"></a>
+    </div>
+  </body>
+</html>
